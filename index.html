@@ -2,162 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GitExplorer - Wikipedia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Student Registration </title>
 </head>
 <body>
-    
-    <h1>GitExplorer</h1>
-    <p><i>From github</i></p>
+    <h1>Student Registration Form</h1>
+    <form action="/submit" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" name="name" required><br><br>
 
-    <!-- Infobox (Right Aligned using legacy HTML align attribute for that classic feel) -->
-    <table align="right" border="1" cellpadding="5" cellspacing="0" width="300">
-        <tr bgcolor="#f9f9f9">
-            <th colspan="2"><font size="+1">GitExplorer</font></th>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">
-                <img src="project_icon.png" alt="GitExplorer Logo" width="100"><br>
-                <small>GitExplorer Logo</small>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">
-                <img src="website homepage.png" alt="GitExplorer Dashboard" width="280"><br>
-                <small>GitExplorer Dashboard Interace (v2.0)</small>
-            </td>
-        </tr>
-        <tr>
-            <td><b>Developer(s)</b></td>
-            <td>SahidGit</td>
-        </tr>
-        <tr>
-            <td><b>Initial release</b></td>
-            <td>2025</td>
-        </tr>
-        <tr>
-            <td><b>Stable release</b></td>
-            <td>v2.0 / 2026</td>
-        </tr>
-        <tr>
-            <td><b>Written in</b></td>
-            <td>JavaScript (React)</td>
-        </tr>
-        <tr>
-            <td><b>Type</b></td>
-            <td>Web Application</td>
-        </tr>
-        <tr>
-            <td><b>License</b></td>
-            <td>MIT License</td>
-        </tr>
-        <tr>
-            <td><b>Website</b></td>
-            <td><a href="https://git-explore-one.vercel.app/">git-explore-one.vercel.app</a></td>
-        </tr>
-        <tr>
-            <td><b>Repository</b></td>
-            <td><a href="https://github.com/SahidGit/git-explorer">GitHub Repository</a></td>
-        </tr>
-    </table>
+        <label for="email">Email Address:</label><br>
+        <input type="email" name="email" required><br><br>
 
-    <!-- Introduction -->
-    <p>
-        <b>GitExplorer</b> is a web-based dashboard application designed to enhance the GitHub browsing experience for developers. 
-        It allows users to discover trending repositories, analyze user contributions, and manage bookmarks in a centralized interface.<a href="#ref-1">[1]</a>
-    </p>
-    <p>
-        The application serves as an alternative frontend to GitHub's native search and explore features, focusing on a streamlined, 
-        aesthetic user interface that prioritizes speed and ease of navigation.
-    </p>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" required><br><br>
 
-    <!-- Table of Contents -->
-    <table border="1" cellpadding="10" cellspacing="0" bgcolor="#f9f9f9">
-        <tr>
-            <td>
-                <b>Contents</b><br>
-                <ol>
-                    <li><a href="#History">History</a></li>
-                    <li><a href="#Functionality">Functionality</a></li>
-                    <li><a href="#Architecture">Architecture</a>
-                        <ul>
-                            <li><a href="#TechStack">Tech Stack</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#SeeAlso">See also</a></li>
-                    <li><a href="#References">References</a></li>
-                    <li><a href="#ExternalLinks">External links</a></li>
-                </ol>
-            </td>
-        </tr>
-    </table>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <br>
 
-    <h2 id="History">History</h2>
-    <hr>
-    <p>
-        GitExplorer began as a project to simplify the navigation of GitHub's vast ecosystem. The initial version focused on basic search 
-        functionalities. The release of version 2.0 (v2) introduced a significant overhaul of the user interface, adopting a "dark mode" 
-        aesthetic and introducing the "Smart Bookmarks" feature.
-    </p>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" name="dob" required><br><br>
 
-    <h2 id="Functionality">Functionality</h2>
-    <hr>
-    <p>The primary function of the software is to interface with the GitHub API to retrieve and display data.</p>
-    <ul>
-        <li><b>Repository Discovery:</b> Users can search for repositories using keywords and filters.</li>
-        <li><b>Trending Analysis:</b> The app aggregates data to show currently trending repositories across various programming languages.</li>
-        <li><b>Bookmark Management:</b> A local storage-based system allows users to save and organize repositories without needing to log in.</li>
-        <li><b>User Analysis:</b> Provides visualizations of contribution metrics for specific GitHub users.<a href="#ref-2">[2]</a></li>
-    </ul>
+       <button type="submit">Submit</button>
+    </form>
+    <br>
 
-    <h2 id="Architecture">Architecture</h2>
-    <hr>
-    <p>
-        GitExplorer is a Single Page Application (SPA). It runs entirely on the client side, fetching data asynchronously from the GitHub REST API.
-    </p>
-
-    <h3 id="TechStack">Tech Stack</h3>
-    <p>The application leverages several modern web technologies:</p>
-    <table border="1" cellpadding="5" cellspacing="0">
-        <tr>
-            <th>Component</th>
-            <th>Technology Used</th>
-        </tr>
-        <tr>
-            <td>Frontend Framework</td>
-            <td>React.js</td>
-        </tr>
-        <tr>
-            <td>Build Tool</td>
-            <td>Vite</td>
-        </tr>
-        <tr>
-            <td>Styling</td>
-            <td>Tailwind CSS</td>
-        </tr>
-        <tr>
-            <td>Icons</td>
-            <td>React Icons</td>
-        </tr>
-    </table>
-
-    <h2 id="References">References</h2>
-    <hr>
-    <ol>
-        <li id="ref-1">^ <i>GitExplorer Repository Readme</i>. GitHub. Retrieved 2026.</li>
-        <li id="ref-2">^ <i>Project Documentation - Feature List</i>. GitExplorer.</li>
-    </ol>
-
-    <h2 id="ExternalLinks">External links</h2>
-    <hr>
-    <ul>
-        <li><a href="https://git-explore-one.vercel.app/" target="_blank">Official Website</a></li>
-        <li><a href="https://github.com/SahidGit/git-explorer" target="_blank">Source Code on GitHub</a></li>
-    </ul>
-    
-    <br><br>
-    <hr>
-    <p><small>This page was last edited on 14 January 2026.</small></p>
-    <p><small>Text is available under the standard terms; additional terms may apply.</small></p>
-
+    <footer>
+        <p>&copy; Sahid Sarfaraz</p>
+    </footer>
 </body>
 </html>
