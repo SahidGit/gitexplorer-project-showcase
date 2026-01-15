@@ -1,9 +1,8 @@
-# GitExplorer Project Showcase
+# Student Registration Form
 
-This project is a simple HTML implementation designed to showcase the specialized GitExplorer application.
-It demonstrates a Wikipedia-style presentation of the project details, including features, history, and tech stack, built entirely with plain HTML.
+This project contains a simple HTML registration form for students.
 
-## Contents
+## Features
 
-- **index.html**: The main showcase page.
-- **Assets**: Icons and images used in the page.
+- **Form Fields**: Collects Name, Email, Password, Gender, and Date of Birth.
+- **HTML Structure**: Built using semantic HTML5 tags including `<form>`, `<input>`, and `<footer>`.
