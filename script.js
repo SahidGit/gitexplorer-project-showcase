@@ -1,7 +1,8 @@
 console.log("Hello World");
 
-let number =  Number(prompt("Enter a number:"));
+let number = prompt("Enter a number:");
 
+number = Number(number);
 
 if (number % 2 === 0) {
     console.log(number + " is an Even number");
