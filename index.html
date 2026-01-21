@@ -3,35 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase Blog</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Student Registration </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Student Registration Form</h1>
-    <form action="/submit" method="post">
-        <label for="name">Full Name:</label><br>
-        <input type="text" name="name" required><br><br>
 
-        <label for="email">Email Address:</label><br>
-        <input type="email" name="email" required><br><br>
 
-        <label for="password">Password:</label><br>
-        <input type="password" name="password" required><br><br>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg" alt="logo">
+            </div>
 
-        <label for="gender">Gender:</label><br>
-        <input type="radio" name="gender" value="male"> Male<br>
-        <input type="radio" name="gender" value="female"> Female<br>
-        <br>
+            <ul class="nav-menu">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <label for="dob">Date of Birth:</label><br>
-        <input type="date" name="dob" required><br><br>
+   
+    <main>
+        <section id="projects" class="projects">
+            <div class="gitexplore">
+                <h1>Gitexplore</h1>
+                <a href="https://github.com/SahidGit/git-explorer">Git Explore</a>
+            </div>
 
-       <button type="submit">Submit</button>
-    </form>
-    <br>
+            <div class="flappy-bird">
+                <h1>Flappy Bird</h1>
+                <a href="https://github.com/SahidGit/flappy-bird">Flappy Bird</a>
+            </div>
+
+            <div class="gamecritic">
+                <h1>GameCritic</h1>
+                <a href="https://github.com/SahidGit/GAMECRITIC">GameCritic</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; Sahid Sarfaraz</p>
+        <section>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+
+        <p>
+            © 2026 Made With
+            <span>
+                <img class="heart" src="heart.png" alt="heart icon">
+            </span>
+        </p>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
